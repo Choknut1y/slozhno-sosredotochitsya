@@ -197,7 +197,7 @@
 .concentration {
   display: grid;
   grid-template-columns: 315px auto;
-  margin-top: 50px;
+  margin-top: 60px;
   justify-content: space-between;
   width: 100%;
   gap: 20px;
@@ -301,10 +301,6 @@
   font-weight: 700;
   line-height: 130%;
   background-color: var(--accent-color);
-}
-
-.pictures_header {
-  font-weight: 400;
 }
 
 .pictures_grid {
