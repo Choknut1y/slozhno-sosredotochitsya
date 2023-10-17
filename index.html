@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="./images/favicon.ico" />
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -20,7 +22,7 @@
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
-              День
+              день
             </button>
           </li>
           <li class="header__theme-menu-item">
@@ -28,23 +30,23 @@
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
-              Неон
+              неон
             </button>
-          </li>
-          <li>
-            <p class="rec header__theme-menu-item">rec</p>
           </li>
         </ul>
       </nav>
 
+      <p class="rec">rec</p>
+
       <h1 class="header-title">no focus</h1>
+
       <div class="block_header">
         <div class="header_text-concentration">
           <p class="text">
@@ -55,27 +57,32 @@
         </div>
       </div>
     </header>
-    <main class="overlay">
+    <main class="main">
       <section class="concentration">
-        <h1 class="title">
-          Почему сосредоточиться так <br />
-          сложно
-        </h1>
+        <h3 class="title concentration_title">
+          Почему сосредоточиться так сложно
+        </h3>
         <div class="multitasking">
-          <p class="text main_text">Многозадачность</p>
+          <div class="text main_text">Многозадачность</div>
 
           <p class="concentration__text">
             Особенно сложно сосредоточиться, когда задач много и все они —
             важные. Где же легендарная многозадачность, когда она так нужна вам
             (и всем нанимающим менеджерам этого мира)? А дело в том, что её
-            просто не существует. Исследователи выяснили, что мозгу тяжело
-            концентрироваться даже на двух делах одновременно. А когда в поле
-            внимания попадает несколько важных задач, организм паникует и
-            выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
-            работаем невнимательно: ошибаемся и быстро устаём.
+            просто не существует. Исследователи
+            <a
+              class="link"
+              href="https://www.dana.org/article/multicosts-of-multitasking/"
+              target="_blank"
+            >
+              выяснили</a
+            >, что мозгу тяжело концентрироваться даже на двух делах
+            одновременно. А когда в поле внимания попадает несколько важных
+            задач, организм паникует и выделяет кортизол и адреналин — «гормоны
+            стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
+            устаём.
           </p>
-        </div>
-        <div class="dopamine">
+
           <p class="text main_text">Дофамин</p>
 
           <p class="concentration__text">
@@ -92,62 +99,62 @@
       </section>
 
       <section class="loss__of__concentration">
-        <h1 class="title title-concentration">
+        <h3 class="title ">
           Что снижает концентрацию внимания?
-        </h1>
+        </h3>
         <div class="multitasking-attention">
-          <p class="text main_text">Многозадачность</p>
+          <div class="multitasking-text">
+            <p class="text multitasking-main_text">Многозадачность</p>
 
-          <p class="concentration__text">
-            Как концентрация может снижаться из-за… концентрации? Любая
-            стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
-            мозг постоянно «сканировать» окружающую среду на предмет опасности.
-            Например, читать новости вместо работы. Но быть собранными всё время
-            — невозможно. Концентрация — мышца, и она может не выдержать, если
-            не давать ей отдохнуть.
-          </p>
-        </div>
+            <p class="concentration__text">
+              Как концентрация может снижаться из-за… концентрации? Любая
+              стрессовая ситуация (и резко меняющийся мир в целом) заставляет
+              наш мозг постоянно «сканировать» окружающую среду на предмет
+              опасности. Например, читать новости вместо работы. Но быть
+              собранными всё время — невозможно. Концентрация — мышца, и она
+              может не выдержать, если не давать ей отдохнуть.
+            </p>
+          </div>
 
-        <div class="food">
-          <p class="text main_text">Еда</p>
+          <div class="multitasking-text">
+            <p class="text main_text">Еда</p>
 
-          <p class="concentration__text">
-            «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
-            доставляют в мозг энергию и помогают ему лучше работать. Но уходит
-            эта энергия также быстро, как и приходит. А мы в результате попадаем
-            на «углеводные качели»: как только действие «быстрых углеводов»
-            заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
-            больше быстрых углеводов.
-          </p>
-        </div>
+            <p class="concentration__text">
+              «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
+              доставляют в мозг энергию и помогают ему лучше работать. Но уходит
+              эта энергия также быстро, как и приходит. А мы в результате
+              попадаем на «углеводные качели»: как только действие «быстрых
+              углеводов» заканчивается, мы чувствуем усталость и сонливость. И
+              хотим ещё больше быстрых углеводов.
+            </p>
+          </div>
+          <div class="multitasking-text">
+            <p class="text main_text">Гаджеты</p>
 
-        <div class="gadgets">
-          <p class="text main_text">Гаджеты</p>
-
-          <p class="concentration__text">
-            Да-да, это та самая ситуация, когда на экране ноутбука — код, в
-            наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
-            утятами. В результате мозг пытается переключиться с одной задачи на
-            другую — и просто не может. А чтобы вернуться к состоянию полной
-            концентрации, человеку в среднем нужно 20 минут. Вот и получается,
-            что чем больше времени мы проводим в гаджетах, тем больше времени
-            затем нужно, чтобы вернуться к работе.
-          </p>
+            <p class="concentration__text">
+              Да-да, это та самая ситуация, когда на экране ноутбука — код, в
+              наушниках — подкаст, а на компьютере фоном — ещё и видео с
+              забавными утятами. В результате мозг пытается переключиться с
+              одной задачи на другую — и просто не может. А чтобы вернуться к
+              состоянию полной концентрации, человеку в среднем нужно 20 минут.
+              Вот и получается, что чем больше времени мы проводим в гаджетах,
+              тем больше времени затем нужно, чтобы вернуться к работе.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="gold__fish">
-        <h1 class="title title-gold__fish">
+        <h3 class="title title-gold__fish">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
-        </h1>
+        </h3>
+        <div class="adviсe">
+          <p class="text main_text__adviсe">
+            5 простых (на самом деле не очень) советов
+          </p>
 
-        <p class="text header_text-p">
-          5 простых (на самом деле не очень) советов
-        </p>
-
-        <div class="sky">
-          <p class="text main_text">Представьте небо и облака</p>
+          <p class="text__adviсe main_text">Представьте небо и облака</p>
 
           <p class="concentration__text">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
@@ -159,10 +166,8 @@
             вернуться в настоящий момент, а не волноваться о потенциальных
             проблемах из будущего.
           </p>
-        </div>
 
-        <div class="music">
-          <p class="text main_text">Включите музыку</p>
+          <p class="text__adviсe main_text">Включите музыку</p>
 
           <p class="concentration__text">
             Но не любую, и не любимую. Любимая может быть связана с сильными
@@ -170,23 +175,24 @@
             Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
             попробовать включить плейлист в «белым шумом» или нейромузыкой.
           </p>
-        </div>
 
-        <div class="partying">
-          <p class="text main_text">Прогуляйтесь</p>
+          <p class="text__adviсe main_text">Прогуляйтесь</p>
 
           <p class="concentration__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-            показал, что созерцание природы повышает концентрацию, в то время
-            как после просмотра городских пейзажей она наоборот понижается.
-            Можно совместить прогулку с физическими упражнениями или бегом — так
-            в мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+            <a
+              class="link"
+              href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+              >показал</a
+            >
+            , что созерцание природы повышает концентрацию, в то время как после
+            просмотра городских пейзажей она наоборот понижается. Можно
+            совместить прогулку с физическими упражнениями или бегом — так в
+            мозг поступит ещё больше кислорода и он будет лучше работать. Но и
             простая двадцатиминутная прогулка — тоже отличный вариант.
           </p>
-        </div>
 
-        <div class="eat">
-          <p class="text main_text">Хорошо ешьте</p>
+          <p class="text__adviсe main_text">Хорошо ешьте</p>
 
           <p class="concentration__text">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
@@ -194,10 +200,8 @@
             высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
             фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
           </p>
-        </div>
 
-        <div class="read">
-          <p class="text main_text">Читайте</p>
+          <p class="text__adviсe main_text">Читайте</p>
 
           <p class="concentration__text">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
@@ -209,37 +213,52 @@
       </section>
 
       <section class="pictures">
-        <h1 class="title title-gold__fish">А можно в картинках?</h1>
-        <div class="scenery">
-          <img src="/images/sunset.png" alt="Пейзаж. Море, горы, птицы." />
-        </div>
-        <div class="ice-cream">
+        <h1 class="pictures_title pictures_header">А можно в картинках?</h1>
+
+        <div class="pictures_grid">
           <img
-            src="/images/ice-cream.png"
+            class="scenery section_img"
+            src="./images/sunset.png"
+            alt="Пейзаж. Море, горы, птицы."
+            loading="lazy"
+          />
+
+          <img
+            class="ice-cream section_img"
+            src="./images/ice-cream.png"
             alt="Милое улыбающееся мороженное."
+            loading="lazy"
           />
-        </div>
-        <div class="tape">
-          <img src="/images/tape.png" alt="Касета от плеера." />
-        </div>
-        <div class="books">
+
           <img
-            src="/images/books.png"
+            class="tape section_img"
+            src="./images/tape.png"
+            alt="Касета от плеера."
+            loading="lazy"
+          />
+
+          <img
+            class="books section_img"
+            src="./images/books.png"
             alt="Книги, на которых стоит кружечка кофе."
+            loading="lazy"
           />
-        </div>
-        <div class="street">
+
           <img
-            src="/images/street.png"
+            class="street section_img"
+            src="./images/street.png"
             alt="Улица. На главном фоне изображены четыре дома, между ними пешеходный переход и три дерева, а вдали еще три многоэтажных дома. "
+            loading="lazy"
           />
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="focus">focus</div>
-      </footer>
     </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="focus">focus</h2>
+    </footer>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
