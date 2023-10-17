@@ -26,7 +26,7 @@
   height: 23px;
   color: var(--accent-color);
   text-align: center;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@
   color: var(--accent-color);
   border: none;
   background-color: transparent;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
 
   padding: 4px 13px;
   font-size: var(--main-font-size);
@@ -53,7 +53,7 @@
   right: 48px;
   margin: 0;
   text-transform: uppercase;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
@@ -116,7 +116,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--decorated-color);
+  border: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button:hover {
@@ -125,10 +125,22 @@
 
 .header__theme-menu-button:focus {
   border: none;
+  outline: none;
+  border-bottom: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--decorated-color);
+}
+
+.link:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--button-color);
+}
+
+link:hover {
+  border: 1px solid var(--button-color);
 }
 
 .header-title {
@@ -141,7 +153,7 @@
   line-height: 128.525px;
   color: #db00ff;
   text-shadow: 4px 4px 0px var(--title-shadow-color);
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
 }
 
 .block_header {
@@ -155,7 +167,7 @@
   background-color: var(--accent-color);
   width: 491px;
   color: var(--text__header-description-color);
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
@@ -177,7 +189,7 @@
 
 .text {
   color: var(--text-color);
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
@@ -187,7 +199,7 @@
 .title {
   width: 315px;
   color: var(--accent-color);
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
@@ -210,7 +222,7 @@
 
 .concentration__text {
   color: #f1b2ce;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
@@ -273,7 +285,7 @@
 
 .text__adviсe {
   color: #000028;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
@@ -282,7 +294,7 @@
 
 .pictures_header {
   color: var(--accent-text-color);
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
@@ -349,7 +361,7 @@
 .focus {
   color: #db00ff;
   text-shadow: 2px 2px 0px #ff0070;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 157px;
   font-style: normal;
   font-weight: 700;
@@ -405,12 +417,9 @@
   }
 
   .concentration {
-    grid-template-columns: 236px auto;
     margin-top: 60px;
-  }
-
-  .loss__of__concentration {
-    width: 236px;
+    display: flex;
+    flex-direction: column;
   }
 
   .multitasking-attention {
@@ -418,11 +427,7 @@
   }
 
   .multitasking-text {
-    width: 728px;
-  }
-
-  .adviсe {
-    width: 472px;
+    width: 100%;
   }
 
   .title-gold__fish {
@@ -436,6 +441,10 @@
     line-height: 82.5%;
   }
 
+  .gold__fish {
+    flex-wrap: wrap;
+  }
+
   .decorated-zone::before {
     inset-block-end: 19px;
   }
@@ -447,8 +456,7 @@
 
 @media (width <=375px) {
   .header {
-    block-size: auto;
-    min-block-size: 668px;
+    min-height: 100vh;
     padding: 10px;
   }
 
