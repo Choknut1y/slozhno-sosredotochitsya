@@ -13,7 +13,9 @@
   color: #353430;
   font-size: var(--main-font-size);
   --title-color: #ffc2e6;
+  --main-color-tittle:#353430;
   --accent-color: #ff8dcb;
+  --text-menu:#353430;
   --text-color: #353430;
   --title-shadow-color: #ff0070;
   --main-text-color: #353430;
@@ -29,22 +31,27 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-image:url(../images/cover-image-light.png);
     background-image: url(../images/cover-image-light.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: var(--main-font-family);
     color: #353430;
-    font-size: var(--main-font-size);
     --title-color: #ffc2e6;
-    --text-color: #000028;
+    --main-color-tittle:#353430;
+    --accent-color: #ff8dcb;
+    --text-menu:#353430;
+    --text-color: #353430;
     --title-shadow-color: #ff0070;
     --main-text-color: #353430;
-    --decorated-color: #ff0070;
+    --decorated-color: #353430;
     --section-text-color: var(--main-text-color);
+    --button-color: var(--text-color);
+    --bg-color: #fff1f7;
   }
 
-  .page.theme_light .rec {
+  .theme_auto p.rec {
     display: none;
   }
 }

@@ -134,13 +134,13 @@
 }
 
 .link:focus {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
 link:hover {
-  border: 1px solid var(--button-color);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--button-color);
 }
 
 .header-title {
@@ -151,7 +151,7 @@ link:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 128.525px;
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 4px 4px 0px var(--title-shadow-color);
   font-family: IBM Plex Mono, sans-serif;
 }
@@ -198,7 +198,7 @@ link:hover {
 
 .title {
   width: 315px;
-  color: var(--accent-color);
+  color: var(--main-color-tittle);
   font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -221,7 +221,7 @@ link:hover {
 }
 
 .concentration__text {
-  color: #f1b2ce;
+  color: var(--text-menu);
   font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -284,7 +284,7 @@ link:hover {
 }
 
 .text__adviсe {
-  color: #000028;
+  color: var(--text-color);
   font-family: IBM Plex Mono, sans-serif;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -359,7 +359,7 @@ link:hover {
 }
 
 .focus {
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 2px 2px 0px #ff0070;
   font-family: IBM Plex Mono, sans-serif;
   font-size: 157px;
@@ -419,7 +419,6 @@ link:hover {
   .concentration {
     margin-top: 60px;
     display: flex;
-    flex-direction: column;
   }
 
   .multitasking-attention {
@@ -441,16 +440,23 @@ link:hover {
     line-height: 82.5%;
   }
 
-  .gold__fish {
-    flex-wrap: wrap;
-  }
-
   .decorated-zone::before {
     inset-block-end: 19px;
   }
 
   .footer {
+    block-size: 100vh;
     min-block-size: 1024px;
+  }
+}
+
+@media (375px < width < 500px) {
+  .concentration {
+    flex-direction: column;
+  }
+
+  .gold__fish {
+    flex-wrap: wrap;
   }
 }
 
@@ -542,7 +548,7 @@ link:hover {
   }
 
   .footer {
-    block-size: auto;
+    block-size: 100vh;
     min-block-size: 667px;
     margin-top: 38px;
   }
