@@ -13,9 +13,9 @@
   color: #353430;
   font-size: var(--main-font-size);
   --title-color: #ffc2e6;
-  --main-color-tittle:#353430;
+  --main-color-tittle: #353430;
   --accent-color: #ff8dcb;
-  --text-menu:#353430;
+  --text-menu: #353430;
   --text-color: #353430;
   --title-shadow-color: #ff0070;
   --main-text-color: #353430;
@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image:url(../images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
     background-image: url(../images/cover-image-light.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,9 +39,9 @@
     font-family: var(--main-font-family);
     color: #353430;
     --title-color: #ffc2e6;
-    --main-color-tittle:#353430;
+    --main-color-tittle: #353430;
     --accent-color: #ff8dcb;
-    --text-menu:#353430;
+    --text-menu: #353430;
     --text-color: #353430;
     --title-shadow-color: #ff0070;
     --main-text-color: #353430;
